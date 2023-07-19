@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD8B1;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    background-color: #ECEFF1;
+    width: 550px;
+    height: 600px;
+    margin: 200px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#generate-btn {
+    margin-left: 20px;
+    width: 123px;
+    height: 42px;
+    top: 23px;
+    left: 412px;
+    padding: 13px 11px 13px 11px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 10px;
+    background: white;
+
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+#seed-color {
+    height: 42px;
+    border: none;
+    margin-right: 15px;
+    background: white;
+    cursor: pointer;
+    width: 115px;
+}
+
+.color-scheme {
+    width: 61px;
+
+    top: 23px;
+    left: 14px;
+    border: 0.5px solid #313131;
+    gap: 10px;
+    background: linear-gradient(0deg, #313131, #313131),
+
+
+}
+
+.color {
+    width: 110px;
+    height: 400px;
+    padding: 0;
+
+
+}
+
+#color-scheme {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+#mode-select {
+    width: 312px;
+    height: 42px;
+    top: 23px;
+    left: 87px;
+    padding: 9px 16px 9px 13px;
+    border-radius: 6px;
+    border: 1px;
+    gap: 4px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+p:hover {
+    color: blue;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.modal-content p:hover {
+    color: black;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#hex-input {
+    height: 42px;
+    width: 115px;
+    border: none;
+    margin-top: 10px;
+    background: white;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 400px) {
+    header {
+        flex-wrap: nowrap;
+    }
+    #generate-btn, #seed-color, #mode-select, #hex-input {
+        margin: 0;
+        width: auto;
+    }
+    #container {
+        margin: auto;
+      
+    }
+}
